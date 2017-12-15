@@ -1,0 +1,8 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - git clone https://github.com/metachris/neo-cli-ci.git
+  - bash neo-cli-ci/build-and-test.sh .
